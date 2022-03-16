@@ -1,25 +1,49 @@
-let sum = document.querySelector('.sum')
-let minus = document.querySelector('.minus')
-let del = document.querySelector('.del')
-let multi = document.querySelector('.multi')
+let result;
 
-sum.onclick = function ()  {
-    let a = prompt("Первое число?");
-    let b = prompt("Второе число?");
-    alert(Number(a) +  Number(b));
+function sum()  {
+    let a = Number(document.getElementById('num1').value);
+let b = Number(document.getElementById('num2').value);
+    result = a + b; 
+    document.getElementById('result').textContent = result;
 }
-minus.onclick = function ()  {
-    let a = prompt("Первое число?");
-    let b = prompt("Второе число?");
-    alert(Number(a) - Number(b));
+function minus()  {
+    let a = Number(document.getElementById('num1').value);
+    let b = Number(document.getElementById('num2').value);
+    result = a - b;
+    document.getElementById('result').textContent = result;
 }
-del.onclick = function ()  {
-    let a = prompt("Первое число?");
-    let b = prompt("Второе число?");
-    alert(Number(a) / Number(b));
+function del()  {
+    let a = Number(document.getElementById('num1').value);
+    let b = Number(document.getElementById('num2').value);
+    result = a / b;
+    document.getElementById('result').textContent = result;
 }
-multi.onclick = function ()  {
-    let a = prompt("Первое число?");
-    let b = prompt("Второе число?");
-    alert(Number(a) *  Number(b));
+function multi()  {
+    let a = Number(document.getElementById('num1').value);
+    let b = Number(document.getElementById('num2').value);
+    result = a * b;
+    document.getElementById('result').textContent  = result;
 }
+
+
+
+// sum.onclick = function ()  {
+//     let a = prompt("Первое число?");
+//     let b = prompt("Второе число?");
+//     alert(Number(a) +  Number(b));
+// }
+// minus.onclick = function ()  {
+//     let a = prompt("Первое число?");
+//     let b = prompt("Второе число?");
+//     alert(Number(a) - Number(b));
+// }
+// del.onclick = function ()  {
+//     let a = prompt("Первое число?");
+//     let b = prompt("Второе число?");
+//     alert(Number(a) / Number(b));
+// }
+// multi.onclick = function ()  {
+//     let a = prompt("Первое число?");
+//     let b = prompt("Второе число?");
+//     alert(Number(a) *  Number(b));
+// }
