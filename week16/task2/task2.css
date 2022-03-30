@@ -1,0 +1,23 @@
+.main {
+    display: flex;
+    justify-content: center;
+}
+.calc {
+    margin-top: 40px;
+    border: 1px solid salmon;
+    width: 40vw;
+}
+.calc__header {
+    background-color: salmon;
+}
+.calc__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+
+
+
