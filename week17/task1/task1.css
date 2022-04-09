@@ -1,0 +1,20 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+} 
+.btn {
+    margin-top: 10px;
+}
+#fullName {
+    width: 40vw;
+}
+.result {
+    display: flex;
+    flex-direction: column;   
+}
+div {
+    padding: 10px;
+}
