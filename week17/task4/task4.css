@@ -1,0 +1,11 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 30px;
+} 
+.btn {
+    margin-top: 10px;
+}
