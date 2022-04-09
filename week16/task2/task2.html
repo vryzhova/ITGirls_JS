@@ -19,7 +19,7 @@
                             <label for="carName" class="col-form-label">Марка машины</label>
                         </div>
                         <div class="col-auto">
-                            <select>
+                            <select class="marka">
                                 <option value="mazda">Mazda</option>
                                 <option value="lada">Lada</option>
                                 <option value="bmv">BMV</option>
@@ -41,11 +41,10 @@
                         <div class="col-auto">
                             <label for="damage">Повреждения</label>
                         </div>
-                        <div class="col-auto ">
+                        <div class="col-auto">
                             <input type="checkbox" id="damage" value="1"> Вмятины <br>
-                            <input type="checkbox" id="damage" value="1"> Царапины <br>
-                            <input type="checkbox" id="damage" value="1"> Трещины на стекле <br>
-                            
+                            <input type="checkbox" id="damage" value="2"> Царапины <br>
+                            <input type="checkbox" id="damage" value="3"> Трещины на стекле <br>
                         </div>
                     </div>
                     <div class="row g-3 align-items-center p-3">
@@ -56,7 +55,13 @@
                             <input type="input" id="mileage" placeholder="Пробег (км)">
                         </div>
                     </div>
-                    <button class="btn btn-danger">Рассчитать</button>
+                    <button type="button" class="btn btn-danger" onclick="click()">Рассчитать</button>
+                    <div class="result">
+
+                    </div>
+                    <div class="error">
+                        
+                    </div>
                 </form>
             </div>
         </section>
