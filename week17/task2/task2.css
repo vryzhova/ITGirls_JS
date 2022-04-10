@@ -1,0 +1,29 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+}
+.main_window {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.input_comments {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.comments {
+    height: 70vw;
+}
+
+.main_title {
+    border: 1px dashed rgba(0 ,0 , 0, 0.1);
+}
+
+.comment{
+    padding: 10px;
+    text-decoration: underline;
+}
