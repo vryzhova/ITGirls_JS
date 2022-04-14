@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
 function checkSpam(){
     const text = document.querySelector('.comment_area').value;
-    let newText = text.replace(/viagra/i && /xxx/i , '***');
+    let newText = text.replace(/viagra/gi || /xxx/gi , '***');
     comments.push(newText);
 }
 
