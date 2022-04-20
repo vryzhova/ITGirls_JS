@@ -1,0 +1,45 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+}
+.main_window {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.input_notes {
+    display: flex;
+    flex-direction: column;
+    
+}
+.done {
+    text-decoration: line-through;
+}
+
+.tasks {
+    height: 50vw;
+}
+
+.main_title {
+    border: 1px dashed rgba(0 ,0 , 0, 0.1);
+}
+
+.comment{
+    padding: 10px;
+    /* text-decoration: underline; */
+}
+.personal_info {
+    padding: 10px;
+}
+
+.user_photo {
+    width: 35vw;
+}
+.avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    border-radius: 100%;
+}

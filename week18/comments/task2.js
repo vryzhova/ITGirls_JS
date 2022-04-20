@@ -14,7 +14,7 @@ function createComment() {
     let img = authorImg.value;
     comments.push({text,author,img});
     renderComments();
-    saveComments()
+    saveComments();
     saveImg();
 
 }
