@@ -15,7 +15,7 @@ class Validator {
             }
 
     isPhone(str) {
-        let phone = str.match(/^\+?(\d{1,3})?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$/);
+        let phone = str.match(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/);
         return phone === null ? false : true;
             }
 }
