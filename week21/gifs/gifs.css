@@ -1,0 +1,10 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gifs {
+  margin: 20px;
+}
+/*# sourceMappingURL=gifs.css.map */
