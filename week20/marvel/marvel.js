@@ -79,10 +79,9 @@ let heroesJson = `[{
     "friends": "частично Мстители, Человек-паук, Росомаха",
     "superpowers": "высокий болевой порог, регенерация и бессмертие, сверхчеловеческая иммунная система"
 }]`
-console.log(heroesJson)
+
 document.addEventListener('DOMContentLoaded',function (event) {
     let heroes = JSON.parse(heroesJson);
-    console.log(heroes);
     let heroesContent= "";
     for (let hero of heroes) {
         heroesContent += `<div class = "heroCard">
@@ -95,9 +94,16 @@ document.addEventListener('DOMContentLoaded',function (event) {
         <p><strong>Род деятельности: </strong>${hero.activity}</p>
         <p><strong>Друзья: </strong>${hero.friends}</p>
         <p><strong>Силы: </strong>${hero.superpowers}</p>
+        <input class="star" type="text">
+        <button type="button" onclick="starMe()">Оценить</button>
         </div>`
     }
     document.querySelector('.galary').innerHTML = heroesContent;
 })
+
+function starMe() {
+    let star = document.querySelector(".star").ariaValueMax;
+    localStorage.setItem('star',star);
+}
 
 //"img": "https://upload.wikimedia.org/wikipedia/ru/thumb/a/a2/Batman_Jim_Lee.jpg/219px-Batman_Jim_Lee.jpg",
